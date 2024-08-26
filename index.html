@@ -144,7 +144,7 @@
             
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
-            <button type="submit" class="styled-button"><a href="Material Page.html">Login</a></button>
+            <button type="submit" class="styled-button">Login</button>
         </form>
         <p id="create">You don't have an account? <a href="#" id="showSignup">Create a new account</a></p>
         <div id="login-error-message">Invalid username or password.</div>
@@ -249,11 +249,11 @@
             const storedPassword = localStorage.getItem('password');
             
             if (username === storedUsername && hashedPassword === storedPassword) {
-                window.location.href = 'Material page.html'; 
+                window.location.href = 'Material Page.html'; 
             } else {
                 document.getElementById('login-error-message').style.display = 'block';
             }
         });
     </script>
 </body>
-</
+</html>
