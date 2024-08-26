@@ -16,6 +16,8 @@
             align-items: center;
             height: 100vh;
             flex-wrap: wrap;
+            gap: 20px; /* Added space between cards */
+            padding: 20px; /* Added padding around the container */
         }
 
         .card {
@@ -23,9 +25,11 @@
             flex-direction: column;
             align-items: center;
             color: white;
-            margin: 30px;
             width: 200px;
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Added background for better readability */
+            border-radius: 10px; /* Rounded corners for the card */
+            padding: 15px; /* Padding inside the card */
         }
 
         img {
@@ -49,7 +53,7 @@
             border-radius: 5px;
             cursor: pointer;
             background-color: black;
-            width: 200px;
+            width: 100%; /* Ensure button fits inside the card */
             height: 50px;
             margin-top: 10px;
         }
@@ -75,11 +79,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
-        .comments span {
-            font-size: 20px;
-            margin-left: 5px;
+        .comments img {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Ensure height is equal to width */
+        }
+
+        .comments a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            font-size: 14px; /* Adjust as needed */
         }
 
         .back {
@@ -117,14 +129,6 @@
         .web span {
             font-size: 24px;
             font-weight: bold;
-        }
-
-        #image-chat {
-            position: absolute;
-            top: 650px;
-            right: 10%;
-            width: 100px;
-            height: 100px;
         }
 
         #com {
